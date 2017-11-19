@@ -1,0 +1,40 @@
+{
+  "name": "react-ssr-example",
+  "version": "1.0.0",
+  "description": "Example universal app for the blog post purpose.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clear": "rimraf ./build",
+    "start": "npm run clear && webpack && node ./build/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burczu/react-ssr-example.git"
+  },
+  "author": "Bartłomiej Dybowski <b.dybowski@gmail.com> (http://frontendinsights.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/burczu/react-ssr-example/issues"
+  },
+  "homepage": "https://github.com/burczu/react-ssr-example#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "html-webpack-plugin": "^2.30.1",
+    "rimraf": "^2.6.2",
+    "webpack": "^3.8.1",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "express": "^4.16.2",
+    "isomorphic-fetch": "^2.2.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  }
+}
