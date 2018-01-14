@@ -22,7 +22,7 @@ app.get('*', async (req, res) => {
 
   const appMarkup = ReactDOMServer.renderToString(
     <Provider store={store}>
-      <App {...initialState} />
+      <App />
     </Provider>
   );
   const html = ReactDOMServer.renderToStaticMarkup(<Html children={appMarkup} scripts={scripts} initialState={initialState} />);

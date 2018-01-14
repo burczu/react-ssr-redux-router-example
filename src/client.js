@@ -5,10 +5,10 @@ import { Provider } from 'react-redux';
 import reducers from './reducers';
 import App from './components/App';
 
-const store = createStore(reducers, {...window.APP_STATE});
+const store = createStore(reducers, { ...window.APP_STATE });
 
 ReactDOM.hydrate(
   <Provider store={store}>
-    <App {...window.APP_STATE} />
+    <App />
   </Provider>,
   document.getElementById('app'));
